@@ -160,33 +160,21 @@
             echo "<hr>";
         }
 
-        public function ganharLutar()
+        public function ganharLuta()
         {
             $this->setVitorias($this->getVitorias() + 1);
         }
 
-        public function perderLutar()
+        public function perderLuta()
         {
             $this->setDerrotas($this->getDerrotas() + 1);
         }
 
-        public function empatarLutar()
+        public function empatarLuta()
         {
             $this->setEmpates($this->getEmpates() + 1);
         }
     }
-
-    //Programa principal
-
-    $l = [];
-    $l[0] = new Lutador("Pretty Boy", "França", 31, 1.75, 68.9, 11, 3, 1);
-    $l[1] = new Lutador("Putscript", "Brasil", 29, 1.68, 57.8, 14, 2, 3);
-    $l[2] = new Lutador("Snapshadow", "EUA", 35, 1.65, 80.9, 12, 2, 1);
-    $l[3] = new Lutador("Dead Code", "Austrália", 28, 1.93, 81.6, 13, 0, 2);
-
-    $l[0]->apresentar();
-    $l[0]->status();
-
 ?>
 </pre>
 </html>
